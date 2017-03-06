@@ -11,8 +11,8 @@ class TestSolution(unittest.TestCase):
 		self.assertFalse(primeNumbers (num =1),)
 	def test_string(self):
 		self.assertTrue(type, int)
-	# def test_evenNumbers():
-	# 	pass
+	def test_notOne(self):
+		self.assertFalse(primeNumbers (num =1),)
 
 if __name__ == '__main__':
 	unittest.main()
