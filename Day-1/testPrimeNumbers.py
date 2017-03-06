@@ -7,3 +7,5 @@ class TestSolution(unittest.TestCase):
 		self.assertFalse(primeNumbers (num = 0),)
 	def test_alphabet(self):
 		self.assertTrue(type, int)
+	def test_one(self):
+		self.assertFalse(primeNumbers (num =1),)
