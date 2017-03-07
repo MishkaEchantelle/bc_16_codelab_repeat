@@ -12,13 +12,10 @@ def data_type(dataType):
 			return "more than 100"
 		else
 			return "equal to 100"
-	if dataType == arrays:
+	if dataType == list:
 		if len(dataType) == 3:
 			return dataType[2]
 		else
-			return "undefine"
-	if dataType == functions:
-		if (dataType) == True
-			return dataType
+			return None
 
 
