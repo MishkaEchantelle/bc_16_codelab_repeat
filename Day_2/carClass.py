@@ -3,6 +3,8 @@ class Car:
 		self.type = type
 		self.model = model
 		self.name = name
-
-
-    
+		
+		self.list = []
+		
+		def add_list (self, list)
+		  self.lists.append(list)
