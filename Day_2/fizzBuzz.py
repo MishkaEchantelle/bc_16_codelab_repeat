@@ -1,4 +1,4 @@
-def fizzBuzz(n):
+def fizz_buzz(n):
 
     if n % 3 == 0 and n % 5 == 0:
         return 'FizzBuzz'
@@ -8,4 +8,3 @@ def fizzBuzz(n):
         return 'Buzz'
     else:
         return str(n)
-
