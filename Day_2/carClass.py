@@ -1,11 +1,8 @@
 class Car:
-	def __init__(self, type, model):
+	def __init__(self, type, model, name):
 		self.type = type
 		self.model = model
 		self.name = name
 
-	def vehicle(self):
-		return "{} {}".format(self.type, self.model, self.name)
-    
 
     
