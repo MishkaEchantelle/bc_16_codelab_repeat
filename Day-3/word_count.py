@@ -8,4 +8,3 @@ def word_count(wordCount):
 			wordCount[word] += 1
 	for key in wordCount.key():
 		print("%s %s " %(key , wordCount[key]))
-	word.close():
