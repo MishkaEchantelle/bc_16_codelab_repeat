@@ -1,24 +1,25 @@
-def data_type(dataType):
+
+def data_type(input_value):
   
-	if dataType == str:
-		return len(dataType)
+	if isinstance(input_value, str):
+		return len(input_value)
 		
-	if dataType == None:
+	if input_value == None:
 		return "no value"
 
-	if dataType == bool:
-		return bool
+	if isinstance(input_value, bool):
+		return input_value
 
-	if isinstance(dataType, list):
-		if len(dataType) == 3:
-			return dataType[2]
+	if isinstance(input_value, list):
+		if len(input_value) == 3:
+			return input_value[2]
 		else:
 			return None
 
-	if type(dataType) == int:
-		if data < 100:
+	if isinstance(input_value, int):
+		if input_value < 100:
 			return "less than 100"
-		elif data == 100:
+		elif input_value == 100:
 			return 'equal to 100'
 		else:
 			return "more than 100"
