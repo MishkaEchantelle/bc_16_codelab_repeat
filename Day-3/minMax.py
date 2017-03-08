@@ -1,25 +1,9 @@
-def maxMin():
-	 maximum = None
-	 minimum =None
+def find_max_min(data):
 
-	 while True:
-	 	input = raw_input("Enter a number:")
+    min_max = [min(data), max(data)]
 
-	 	if input == "done":
-	 		break
-	 	if len(input) < 1:
-	 		break
-
-	 	try:
-	 		number = int(input)
-	 	except :
-	 		print"Invalid input"
-	 		continue
-
-	 	if minimum is None:
-	 		minimum = number
-	 		maximum = number
-	 	elif number < minimum:
-	 		minimum = number
-	 	elif number > maximum:
-	 	    maximum = number
+    if min(data) == max(data):
+        return [min(data)]
+    else:
+        return min_max
+  
