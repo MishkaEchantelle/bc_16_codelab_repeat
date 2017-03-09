@@ -1,5 +1,5 @@
-def find_missing_number(list_a, list_b):
-	if len(list_a) == len(list_b) == 0:
+def find_missing(list_one, list_two):
+	if len(list_one) == len(list_two) == 0:
 		return 0
 	else:
-		return list(set(list_a)-set(list_b))
+		return list(set(list_one)-set(list_two))
