@@ -1,10 +1,16 @@
-def word_count(wordCount):
-	wordCount = {}
 
-	for word in wordCount.read().split():
-		if word not in wordCount:
-			wordCount[word] = 1
+def words(words_count):
+	words_count = {}
+
+	for word in words_count.replace().split():
+		if word not in words_count:
+			words_count[word] = 1
 		else:
-			wordCount[word] += 1
-	for key in wordCount.key():
-		print("%s %s " %(key , wordCount[key]))
+			words_count[word] += 1
+	for key, val in words_count.items():
+		if isinstance(key, str) and key.isdigit():
+            words_count[int(key)] = val
+            words_count.pop(key)
+            
+  return words
+            
